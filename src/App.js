@@ -5,7 +5,9 @@ import { setCurrentUser } from "./redux/user/user.actions";
 
 import "./App.css";
 import HomePage from "./pages/homepage/homepage.component";
-import { Switch, Route, Redirect } from "react-router-dom";
+
+
+ 
 import ShopPage from "./pages/shoppage/shop.component";
 import Header from "./components/header/header.component";
 import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component";
@@ -13,6 +15,7 @@ import {
   auth,
   createUserProfileDocument,
 } from "./components/firebase/firebase.utils";
+import { Switch,Route, Redirect } from "react-router-dom";
 
 class App extends Component {
   unsubscribeFromAuth = null;
